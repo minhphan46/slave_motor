@@ -1,23 +1,31 @@
 # slave_motor
 
-** Thiết bị sử dụng:
-- Board Arduino Uno R3 + CNC Shiled V3
-- Driver điều khiển step motor - A8825
+## Equipment used:
 
-** Xây dựng hệ thống:
-* Slave - Arduino Uno R3 + CNC Shiled V3:
-+ Sau khi nhận được tín hiệu phân loại rác bên nào, mạch sẽ tiến hành xử lý và điều khiển motor quay đúng bên để đưa rác vào thùng.
-+ Sau khi kết thúc tiến trình sẽ phản hồi về ESP8266 để thông báo có thể bắt đầu tiến trình mới.
+- Arduino Uno R3 Board + CNC Shield V3
+- Step motor driver - A8825
 
-** Thư viện sử dụng:
-+ AccelStepper
-+ Wire
+## Building the system:
 
-** IDE Platform: PlatformIO + Arduino IDE
+- Slave - Arduino Uno R3 + CNC Shield V3:
+- After receiving the signal to classify garbage, the circuit will process and control the motor to rotate in the correct direction to put the garbage into the bin.
+- After the process is completed, it will respond to the ESP8266 to notify that a new process can be started.
 
-** Hướng dẫn cài đặt:
-- Đối với mạch Arduino Uno R3 + CNC Shield V3, tải code về, tải các thư viện phù hợp, sau đó tiến hành upload code, điều chỉnh dòng điện phù hợp với động cơ trên driver A8825.
+## Libraries used:
 
-** LƯU Ý:
-- Khi upload code, tháo chân cắm SDA và SCL ra, sau khi code upload xong có thể cắm vào.
-- Tiến hành kết nối động cơ với mạch trước rồi mới cấp nguồn cho CNC Shield V3.
+- AccelStepper
+- Wire
+
+## IDE Platform:
+
+- PlatformIO
+- Arduino IDE
+
+## Installation guide:
+
+- For the Arduino Uno R3 + CNC Shield V3 circuit, download the code, download the appropriate libraries, and then upload the code, adjust the current to match the motor on the A8825 driver.
+
+## NOTE:
+
+- When uploading code, remove the SDA and SCL pins, and after the code is uploaded, they can be plugged back in.
+- Connect the motor to the circuit before powering on the CNC Shield V3.
